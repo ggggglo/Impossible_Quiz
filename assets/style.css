@@ -9,3 +9,15 @@ header {
     font-weight: 400;
     margin-top: 50px;
 }
+
+#timer{
+    font-size: 350px;
+}
+.questions{
+    display: none;
+}
+
+.answers {
+    display: none;
+}
+
