@@ -1,23 +1,47 @@
 * {
     font-family: caraque-solid, sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     text-align: center;
 }   
 
+body{
+    background: url();
+    background-size: 470px;
+    background-repeat: no-repeat; 
+}
+
 header {
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 200px;
 }
+
+#yes{
+    background-color: #F2A3C5;
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+#no{
+    background-color: #F2A3C5;
+    color: white;
+    padding: 20px; 
+}
+
 
 #timer{
     font-size: 350px;
+    display: none;
 }
 .questions{
     display: none;
+    list-style: none;
 }
 
 .answers {
     display: none;
+    list-style: none;
 }
 
