@@ -1,14 +1,26 @@
 
 var timeLeft = document.querySelector("#timer");
-var mainEl = document.getElementById("main");
-var yes = document.getElementById("#yes");
-var no = document.getElementById("#no");
-var questions = document.getElementById(".questions")
-var questions = document.getElementById(".answers")
+var mainEl = document.querySelector("main");
+var yes = document.querySelector("#yes");
+var no = document.querySelector("#no");
+var question1 = document.querySelector("#question1")
+var answer1 = document.querySelector("#answer1")
+var question2 = document.querySelector("#question2")
+var answer2 = document.querySelector("#answer2")
+var question3 = document.querySelector("#question3")
+var answer3 = document.querySelector("#answer3")
+var header = document.querySelector("h1")
 
 var secondsLeft = 60;
 
-document.getElementById(".questions").style.display = "none";
+yes.addEventListener("click", function(){
+    question1.style.display = "block";
+    answ
+    timeLeft.style.display = "block";
+    yes.style.display = "none";
+    no.style.display = "none";
+    header.style.display = "none"
+    });
 
 function setTime() {
   var timerInterval = setInterval(function() {
@@ -19,7 +31,6 @@ function setTime() {
       clearInterval(timerInterval);
       sendMessage();
     }
-
   }, 1000);
 }
 
@@ -32,4 +43,3 @@ function sendMessage() {
 }
 
 setTime(); 
-sendMessage(); 

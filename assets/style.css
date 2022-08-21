@@ -1,7 +1,4 @@
 * {
-    font-family: caraque-solid, sans-serif;
-    font-weight: 300;
-    font-style: normal;
     text-align: center;
 }   
 
@@ -10,38 +7,74 @@ body{
     background-size: 470px;
     background-repeat: no-repeat; 
 }
+main {
+    position: relative;
+}
 
-header {
-    font-weight: 400;
+h1 {
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     margin-top: 200px;
+}
+
+h2 {
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #yes{
     background-color: #F2A3C5;
     color: white;
     padding: 30px;
-    font-size: 50px;
+    font-family: bungee, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     margin-right: 20px;
 }
 
 #no{
     background-color: #F2A3C5;
     color: white;
-    padding: 20px; 
+    padding: 20px;
+    font-family: bungee, sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
-
 
 #timer{
     font-size: 350px;
     display: none;
+    position: absolute;
+    color: grey;
+    z-index: 9;
 }
-.questions{
+#question1{
+    display: none;
+}
+
+#answer1{
     display: none;
     list-style: none;
 }
 
-.answers {
+#question2{
     display: none;
     list-style: none;
 }
 
+#answer2{
+    display: none;
+    list-style: none;
+}
+
+#question3{
+    display: none;
+    list-style: none;
+}
+
+#answer3{
+    display: none;
+    list-style: none;
+}
