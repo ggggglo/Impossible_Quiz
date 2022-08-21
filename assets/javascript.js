@@ -6,12 +6,30 @@ var no = document.querySelector("#no")
 var nope1 = document.querySelector("#nope1")
 var tryagain = document.querySelector("#tryagain")
 var house = document.querySelector("#house")
+
+var nope1 = document.querySelector("#nope1")
+var nopetext1 = document.querySelector("#nopetext1")
+var nope12 = document.querySelector("#nope12")
+var nopetext12 = document.querySelector("#nopetext12")
+var nope13 = document.querySelector("#nope13")
+var nopetext13 = document.querySelector("#nopetext13")
+var nope14 = document.querySelector("#nope14")
+var nopetext14 = document.querySelector("#nopetext14")
+
+
+var nope2 = document.querySelector("#nope2")
+var nopetext2 = document.querySelector("#nopetext2")
+var nope23 = document.querySelector("#nope23")
+var nopetext23 = document.querySelector("#nopetext23")
+var nope24 = document.querySelector("#nope24")
+var nopetext24 = document.querySelector("#nopetext24")
+
 var question1 = document.querySelector("#question1")
-var answer1 = document.querySelector("#answer1")
+var answer1 = document.querySelector(".answer1")
 var text1 = document.querySelector("#text1")
 var keepgoing = document.querySelector("#keepgoing")
 var question2 = document.querySelector("#question2")
-var answer2 = document.querySelector("#answer2")
+var answer2 = document.querySelector(".answer2")
 var ok = document.querySelector("#ok")
 var text2 = document.querySelector("#text2")
 var keepgoing2 = document.querySelector("#keepgoing2")
@@ -36,7 +54,10 @@ var losses = 0;
 
 yes.addEventListener("click", function(){
     question1.style.display = "block";
-    answer1.style.display = "block";
+    nope1.style.display = "block";
+    nope12.style.display = "block";
+    nope13.style.display = "block";
+    nope14.style.display = "block";
     timeLeft.style.display = "block";
     yes.style.display = "none";
     no.style.display = "none";
@@ -46,24 +67,170 @@ yes.addEventListener("click", function(){
 
 house.addEventListener("click",function(){
     question1.style.display = "none";
-    answer1.style.display = "none";
+    nope1.style.display = "none";
+    nope12.style.display = "none";
+    nope13.style.display = "none";
+    nope14.style.display = "none";
     text1.style.display = "block";
     keepgoing.style.display = "block";
 });  
+
+nope1.addEventListener("click", function(){
+    question1.style.display = "none";
+    nope1.style.display = "none";
+    nope12.style.display = "none";
+    nope13.style.display = "none";
+    nope14.style.display = "none";
+    nopetext1.style.display = "block";
+});
+
+nopetext1.addEventListener("click", function(){
+    question1.style.display = "block";
+    nope1.style.display = "block";
+    nope12.style.display = "block";
+    nope13.style.display = "block";
+    nope14.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext1.style.display = "none";
+});
+
+nope12.addEventListener("click", function(){
+    question1.style.display = "none";
+    nope1.style.display = "none";
+    nope12.style.display = "none";
+    nope13.style.display = "none";
+    nope14.style.display = "none";
+    nopetext12.style.display = "block";
+});
+
+nopetext12.addEventListener("click", function(){
+    question1.style.display = "block";
+    nope1.style.display = "block";
+    nope12.style.display = "block";
+    nope13.style.display = "block";
+    nope14.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext12.style.display = "none";
+});
+
+nope13.addEventListener("click", function(){
+    question1.style.display = "none";
+    nope1.style.display = "none";
+    nope12.style.display = "none";
+    nope13.style.display = "none";
+    nope14.style.display = "none";
+    nopetext13.style.display = "block";
+});
+
+nopetext13.addEventListener("click", function(){
+    question1.style.display = "block";
+    nope1.style.display = "block";
+    nope12.style.display = "block";
+    nope13.style.display = "block";
+    nope14.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext13.style.display = "none";
+});
+
+nope14.addEventListener("click", function(){
+    question1.style.display = "none";
+    nope1.style.display = "none";
+    nope12.style.display = "none";
+    nope13.style.display = "none";
+    nope14.style.display = "none";
+    nopetext14.style.display = "block";
+});
+
+nopetext14.addEventListener("click", function(){
+    question1.style.display = "block";
+    nope1.style.display = "block";
+    nope12.style.display = "block";
+    nope13.style.display = "block";
+    nope14.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext14.style.display = "none";
+});
+
+
 
 keepgoing.addEventListener("click",function(){
     text1.style.display = "none";
     keepgoing.style.display = "none";
     question2.style.display = "block";
-    answer2.style.display = "block";
+    ok.style.display = "block";
+    nope2.style.display = "block";
+    nope23.style.display = "block";
+    nope24.style.display = "block";
 });
+
+nope2.addEventListener("click", function(){
+    question2.style.display = "none";
+    ok.style.display = "none";
+    nope2.style.display = "none";
+    nope23.style.display = "none";
+    nope24.style.display = "none";
+    nopetext2.style.display = "block";
+});
+
+nopetext2.addEventListener("click", function(){
+    question2.style.display = "block";
+    ok.style.display = "block";
+    nope2.style.display = "block";
+    nope23.style.display = "block";
+    nope24.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext2.style.display = "none";
+});
+
+nope23.addEventListener("click", function(){
+    question2.style.display = "none";
+    ok.style.display = "none";
+    nope2.style.display = "none";
+    nope23.style.display = "none";
+    nope24.style.display = "none";
+    nopetext23.style.display = "block";
+});
+
+nopetext23.addEventListener("click", function(){
+    question2.style.display = "block";
+    ok.style.display = "block";
+    nope2.style.display = "block";
+    nope23.style.display = "block";
+    nope24.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext23.style.display = "none";
+});
+
+
+nope24.addEventListener("click", function(){
+    question2.style.display = "none";
+    ok.style.display = "none";
+    nope2.style.display = "none";
+    nope23.style.display = "none";
+    nope24.style.display = "none";
+    nopetext24.style.display = "block";
+});
+
+
+nopetext24.addEventListener("click", function(){
+    question2.style.display = "block";
+    ok.style.display = "block";
+    nope2.style.display = "block";
+    nope23.style.display = "block";
+    nope24.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext24.style.display = "none";
+});
+
 
 ok.addEventListener("click", function(){
     text2.style.display = "block";
     keepgoing2.style.display = "block";
     question2.style.display = "none";
-    answer2.style.display = "none";
-
+    ok.style.display = "none";
+    nope2.style.display = "none";
+    nope23.style.display = "none";
+    nope24.style.display = "none";
 });
 
 keepgoing2.addEventListener("click", function(){
