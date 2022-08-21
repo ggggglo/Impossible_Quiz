@@ -60,7 +60,7 @@ h2 {
     margin-top: 100px;
 }
 
-.answer1, .answer2 {
+.answer1, .answer2, .answer3 {
     list-style: none;
     font-family: bungee, sans-serif;
     font-weight: 500;
@@ -68,11 +68,11 @@ h2 {
     display: none;
 }
 
-#nope1, #nope12, #nope13, #nope14 {
+#nope1, #nope12, #nope13, #nope14, #nope2, #nope23, #nope24, #nope3, #nope32, #nope34 {
     position: relative;
 }
 
-#nopetext1, #nopetext12, #nopetext13, #nopetext14, #nopetext2, #nopetext23, #nopetext24 {
+#nopetext1, #nopetext12, #nopetext13, #nopetext14, #nopetext2, #nopetext23, #nopetext24, #nopetext3, #nopetext32, #nopetext34 {
     background-color: #F2A3C5;
     color: white;
     font-family: bungee, sans-serif;
