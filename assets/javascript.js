@@ -18,8 +18,17 @@ var keepgoing2 = document.querySelector("#keepgoing2")
 var question3 = document.querySelector("#question3")
 var answer3 = document.querySelector("#answer3")
 var spock = document.querySelector("#spock")
+var text3 = document.querySelector("#text3")
+var keepgoing3 = document.querySelector("#keepgoing3")
+var question4 = document.querySelector("#question4")
+var gotit = document.querySelector ("#gotit")
+var answer4 = document.querySelector("#answer4")
+var thisanswer = document.querySelector("#thisanswer")
+var wincount = document.querySelector("wincount")
 var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
+
+
 
 var secondsLeft = 60;
 var wins = 0;
@@ -65,12 +74,32 @@ keepgoing2.addEventListener("click", function(){
 });
 
 spock.addEventListener("click", function(){
+    text3.style.display = "block";
+    keepgoing3.style.display = "block";
+    question3.style.display = "none";
+    answer3.style.display = "none";  
+    console.log(spock);
+});
 
+keepgoing3.addEventListener("click", function(){
+    text3.style.display = "none";
+    keepgoing3.style.display = "none";
+    question4.style.display = "block";
+    gotit.style.display = "block";
+});
 
+gotit.addEventListener("click", function (){
+    gotit.style.display = "none";
+    answer4.style.display = "block";
 })
 
-
-
+thisanswer.addEventListener("click", function(){
+    wins ++
+    text4.style.display = "block";
+    question4.style.display = "none";
+    answer4.style.display = "none";
+    wincount.style.display = "block";
+});
 
 function setTime() {
   var timerInterval = setInterval(function() {

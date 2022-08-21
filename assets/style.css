@@ -138,13 +138,23 @@ h2 {
 
 #question3{
     display: none;
+    position: relative;
 }
 
 #answer3{
     display: none;
+    position: relative;
 }
 
-#nope {
+#text3 {
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    color: black;
+    position: relative;
+    display: none;
+}
+
+#keepgoing3{
     background-color: #F2A3C5;
     color: white;
     font-family: bungee, sans-serif;
@@ -157,6 +167,34 @@ h2 {
     top: 100px;
 }
 
-#tryagain {
+#question4{
+    display: none;
+    position: relative;
+}
+
+#gotit{
+    display: none;
+    position: relative;
+}
+#answer4{
+    display: none;
+    position: relative;
+}
+
+#text4 {
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 200px;
+    position: relative;
+    display: none;
+}
+
+#wincount {
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 200px;
+    position: relative;
     display: none;
 }
