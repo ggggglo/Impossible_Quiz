@@ -1,4 +1,4 @@
-
+var body = document.querySelector("#body")
 var timeLeft = document.querySelector("#timer")
 var mainEl = document.querySelector("main")
 var yes = document.querySelector("#yes")
@@ -58,9 +58,10 @@ var question4 = document.querySelector("#question4")
 var gotit = document.querySelector ("#gotit")
 var answer4 = document.querySelector(".answer4")
 var thisanswer = document.querySelector("#thisanswer")
-var wincount = document.querySelector("wincount")
+var wincount = document.querySelector("#wincount")
 var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
+var losttext = document.querySelector("#losttext")
 
 
 
@@ -449,7 +450,6 @@ function setTime() {
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
-      sendMessage();
     }
   }, 1000);
 }

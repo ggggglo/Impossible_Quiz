@@ -75,6 +75,7 @@ h2 {
 #nopetext1, #nopetext12, #nopetext13, #nopetext14, #nopetext2, #nopetext23, #nopetext24, #nopetext3, #nopetext32, #nopetext34, #nopetext4, #nopetext42, #nopetext43, #nopetext44 {
     background-color: #F2A3C5;
     color: white;
+    border-color: black;
     font-family: bungee, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -200,7 +201,7 @@ h2 {
     position: relative;
 }
 
-#text4 {
+#text4, #losttext {
     font-family: bungee, sans-serif;
     font-weight: 800;
     font-style: normal;
