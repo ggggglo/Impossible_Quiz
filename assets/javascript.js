@@ -31,6 +31,15 @@ var nopetext32 = document.querySelector("#nopetext32")
 var nope34 = document.querySelector("#nope34")
 var nopetext34 = document.querySelector("#nopetext34")
 
+var nope4 = document.querySelector("#nope4")
+var nopetext4 = document.querySelector("#nopetext4")
+var nope42 = document.querySelector("#nope42")
+var nopetext42 = document.querySelector("#nopetext42")
+var nope43 = document.querySelector("#nope43")
+var nopetext43 = document.querySelector("#nopetext43")
+var nope44 = document.querySelector("#nope44")
+var nopetext44 = document.querySelector("#nopetext44")
+
 var question1 = document.querySelector("#question1")
 var answer1 = document.querySelector(".answer1")
 var text1 = document.querySelector("#text1")
@@ -47,7 +56,7 @@ var text3 = document.querySelector("#text3")
 var keepgoing3 = document.querySelector("#keepgoing3")
 var question4 = document.querySelector("#question4")
 var gotit = document.querySelector ("#gotit")
-var answer4 = document.querySelector("#answer4")
+var answer4 = document.querySelector(".answer4")
 var thisanswer = document.querySelector("#thisanswer")
 var wincount = document.querySelector("wincount")
 var h1 = document.querySelector("h1")
@@ -329,15 +338,108 @@ keepgoing3.addEventListener("click", function(){
 
 gotit.addEventListener("click", function (){
     gotit.style.display = "none";
-    answer4.style.display = "block";
+    thisanswer.style.display = "block";
+    nope4.style.display = "block";
+    nope42.style.display = "block";
+    nope43.style.display = "block";
+    nope44.style.display = "block";
 })
+
+nope4.addEventListener("click", function(){
+    question4.style.display = "none";
+    thisanswer.style.display = "none";
+    nope4.style.display = "none";
+    nope42.style.display = "none";
+    nope43.style.display = "none";
+    nope44.style.display = "none";
+    nopetext4.style.display = "block";
+});
+
+nopetext4.addEventListener("click", function(){
+    question4.style.display = "block";
+    thisanswer.style.display = "block";
+    nope4.style.display = "block";
+    nope42.style.display = "block";
+    nope43.style.display = "block";
+    nope44.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext4.style.display = "none";
+});
+
+nope42.addEventListener("click", function(){
+    question4.style.display = "none";
+    thisanswer.style.display = "none";
+    nope4.style.display = "none";
+    nope42.style.display = "none";
+    nope43.style.display = "none";
+    nope44.style.display = "none";
+    nopetext42.style.display = "block";
+});
+
+nopetext42.addEventListener("click", function(){
+    question4.style.display = "block";
+    thisanswer.style.display = "block";
+    nope4.style.display = "block";
+    nope42.style.display = "block";
+    nope43.style.display = "block";
+    nope44.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext42.style.display = "none";
+});
+
+nope43.addEventListener("click", function(){
+    question4.style.display = "none";
+    thisanswer.style.display = "none";
+    nope4.style.display = "none";
+    nope42.style.display = "none";
+    nope43.style.display = "none";
+    nope44.style.display = "none";
+    nopetext43.style.display = "block";
+});
+
+nopetext43.addEventListener("click", function(){
+    question4.style.display = "block";
+    thisanswer.style.display = "block";
+    nope4.style.display = "block";
+    nope42.style.display = "block";
+    nope43.style.display = "block";
+    nope44.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext43.style.display = "none";
+});
+
+nope44.addEventListener("click", function(){
+    question4.style.display = "none";
+    thisanswer.style.display = "none";
+    nope4.style.display = "none";
+    nope42.style.display = "none";
+    nope43.style.display = "none";
+    nope44.style.display = "none";
+    nopetext44.style.display = "block";
+});
+
+nopetext44.addEventListener("click", function(){
+    question4.style.display = "block";
+    thisanswer.style.display = "block";
+    nope4.style.display = "block";
+    nope42.style.display = "block";
+    nope43.style.display = "block";
+    nope44.style.display = "block";
+    timeLeft.style.display = "block";
+    nopetext44.style.display = "none";
+});
+
 
 thisanswer.addEventListener("click", function(){
     wins ++
     text4.style.display = "block";
     question4.style.display = "none";
-    answer4.style.display = "none";
-    wincount.style.display = "block";
+    thisanswer.style.display = "none";
+    nope4.style.display = "none";
+    nope42.style.display = "none";
+    nope43.style.display = "none";
+    nope44.style.display = "none";
+    timeLeft.style.display = "none";
 });
 
 function setTime() {
