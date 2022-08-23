@@ -1,8 +1,8 @@
 # Impossible Quiz
 
 # Project Objectives
-To create an interactive website that holds a quiz of any kind.
-To practive JavaScript fundamentals. 
+1. To create an interactive website that holds a quiz of any kind.
+2. To practice JavaScript fundamentals. 
 
 # Project Description 
 The Impossible Quiz is a fun and interactive quiz that does the following:
