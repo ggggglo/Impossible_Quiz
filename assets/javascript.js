@@ -4,6 +4,7 @@ var mainEl = document.querySelector("main")
 var yes = document.querySelector("#yes")
 var no = document.querySelector("#no")
 var nope1 = document.querySelector("#nope1")
+var playagain = document.querySelector("#playagain")
 var tryagain = document.querySelector("#tryagain")
 var house = document.querySelector("#house")
 
@@ -59,6 +60,7 @@ var gotit = document.querySelector ("#gotit")
 var answer4 = document.querySelector(".answer4")
 var thisanswer = document.querySelector("#thisanswer")
 var wincount = document.querySelector("#wincount")
+var losscount = document.querySelector("#losscount")
 var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
 var losttext = document.querySelector("#losttext")
@@ -167,8 +169,6 @@ nopetext14.addEventListener("click", function(){
     timeLeft.style.display = "block";
     nopetext14.style.display = "none";
 });
-
-
 
 keepgoing.addEventListener("click",function(){
     text1.style.display = "none";
@@ -433,6 +433,10 @@ nopetext44.addEventListener("click", function(){
 
 thisanswer.addEventListener("click", function(){
     wins ++
+    wincount.textContent = ("WINS: " + wins);
+    losscount.textContent = ("LOSSES: " + losses);
+    wincount.style.display = "block";
+    losscount.style.display = "block";
     text4.style.display = "block";
     question4.style.display = "none";
     thisanswer.style.display = "none";
@@ -441,7 +445,16 @@ thisanswer.addEventListener("click", function(){
     nope43.style.display = "none";
     nope44.style.display = "none";
     timeLeft.style.display = "none";
+    playagain.style.display = "block";
+    console.log(wins);
 });
+
+playagain.addEventListener("click", function(){
+    window.location.reload()
+});
+
+localStorage.setItem("losses", "losses");
+localStorage.setItem('wins', 'wins');
 
 function setTime() {
   var timerInterval = setInterval(function() {

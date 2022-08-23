@@ -60,19 +60,29 @@ h2 {
     margin-top: 100px;
 }
 
-.answer1, .answer2, .answer3, .answer4 {
+.answer1, .answer2, .answer3 {
     list-style: none;
     font-family: bungee, sans-serif;
     font-weight: 500;
     position: relative;
     display: none;
+    margin-right: 10px;
+}
+
+.answer4 {
+    list-style: none;
+    font-family: bungee, sans-serif;
+    font-weight: 500;
+    position: relative;
+    display: none;
+    margin-right: 20px;
 }
 
 #nope1, #nope12, #nope13, #nope14, #nope2, #nope23, #nope24, #nope3, #nope32, #nope34, #nope4, #nope42, #nope43, #nope44 {
     position: relative;
 }
 
-#nopetext1, #nopetext12, #nopetext13, #nopetext14, #nopetext2, #nopetext23, #nopetext24, #nopetext3, #nopetext32, #nopetext34, #nopetext4, #nopetext42, #nopetext43, #nopetext44 {
+#nopetext1, #nopetext12, #nopetext13, #nopetext2, #nopetext24, #nopetext3, #nopetext34, #nopetext4, #nopetext43, #nopetext44 {
     background-color: #F2A3C5;
     color: white;
     border-color: black;
@@ -83,6 +93,34 @@ h2 {
     padding: 60px;
     position: absolute;
     left: 100px;
+    top: 100px;
+}
+
+#nopetext14 {
+    background-color: #F2A3C5;
+    color: white;
+    border-color: black;
+    font-family: bungee, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: none;
+    padding: 60px;
+    position: absolute;
+    left: 12px;
+    top: 100px;
+}
+
+ #nopetext23, #nopetext32, #nopetext42 {
+    background-color: #F2A3C5;
+    color: white;
+    border-color: black;
+    font-family: bungee, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: none;
+    padding: 60px;
+    position: absolute;
+    left: 45px;
     top: 100px;
 }
 
@@ -121,7 +159,7 @@ h2 {
     display: none;
     padding: 60px;
     position: absolute;
-    left: 100px;
+    left: 90px;
     top: 100px;
 }
 
@@ -152,7 +190,7 @@ h2 {
     display: none;
     padding: 60px;
     position: absolute;
-    left: 100px;
+    left: 90px;
     top: 100px;
 }
 
@@ -183,7 +221,7 @@ h2 {
     display: none;
     padding: 60px;
     position: absolute;
-    left: 100px;
+    left: 90px;
     top: 100px;
 }
 
@@ -205,16 +243,37 @@ h2 {
     font-family: bungee, sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin-top: 200px;
+    margin-top: 150px;
     position: relative;
     display: none;
 }
 
-#wincount {
+#wincount, #losscount {
     font-family: bungee, sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin-top: 200px;
+    margin-top: 50px;
+    position: relative;
+    display: none;
+}
+#playagain, #tryagain{
+    background-color: #F2A3C5;
+    color: white;
+    border-color: black;
+    font-family: bungee, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 130px;
+    top: 400px;
+}
+
+#wincount, #losscount {
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     position: relative;
     display: none;
 }
