@@ -1,30 +1,31 @@
+/* Text align for entire document */
 * {
     text-align: center;
 }   
-
+/* Background attributes in the body */
 body{
     background: url();
     background-size: 470px;
     background-repeat: no-repeat; 
 }
-
+/* Making all element in the main tag relatively positioned */
 main {
     position: relative;
 }
-
+/* H1 styling */
 h1 {
     font-family: bungee, sans-serif;
     font-weight: 800;
     font-style: normal;
     margin-top: 200px;
 }
-
+/* H2 styling */
 h2 {
     font-family: bungee, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
+/* Yes button styling */
 #yes{
     background-color: #F2A3C5;
     color: white;
@@ -34,7 +35,7 @@ h2 {
     font-style: normal;
     margin-right: 20px;
 }
-
+/* No button styling */
 #no{
     background-color: #F2A3C5;
     color: white;
@@ -43,7 +44,7 @@ h2 {
     font-weight: 600;
     font-style: normal;
 }
-
+/* Timer styling */
 #timer{
     font-family: bungee, sans-serif;
     font-size: 270px;
@@ -52,14 +53,14 @@ h2 {
     position: absolute;
     margin-top: 150px;
 }
-
+/* Styling for all questions */
 .questions {
     font-family: bungee, sans-serif;
     font-weight: 400;
     position: relative;
     margin-top: 100px;
 }
-
+/* Styling for first 3 answers */
 .answer1, .answer2, .answer3 {
     list-style: none;
     font-family: bungee, sans-serif;
@@ -68,7 +69,7 @@ h2 {
     display: none;
     margin-right: 10px;
 }
-
+/* Styling for answer 4 */
 .answer4 {
     list-style: none;
     font-family: bungee, sans-serif;
@@ -77,11 +78,11 @@ h2 {
     display: none;
     margin-right: 20px;
 }
-
+/* Positioning for all answers that are wrong */
 #nope1, #nope12, #nope13, #nope14, #nope2, #nope23, #nope24, #nope3, #nope32, #nope34, #nope4, #nope42, #nope43, #nope44 {
     position: relative;
 }
-
+/* Styling for prompt buttons after clicking wrong answers */
 #nopetext1, #nopetext12, #nopetext13, #nopetext2, #nopetext24, #nopetext3, #nopetext34, #nopetext4, #nopetext43, #nopetext44 {
     background-color: #F2A3C5;
     color: white;
@@ -95,7 +96,7 @@ h2 {
     left: 100px;
     top: 100px;
 }
-
+/* Styling for prompt button after clicking wrong answer */
 #nopetext14 {
     background-color: #F2A3C5;
     color: white;
@@ -109,7 +110,7 @@ h2 {
     left: 12px;
     top: 100px;
 }
-
+/* Styling for prompt buttons after clicking wrong answers */
  #nopetext23, #nopetext32, #nopetext42 {
     background-color: #F2A3C5;
     color: white;
@@ -123,17 +124,17 @@ h2 {
     left: 45px;
     top: 100px;
 }
-
+/* Q1 display and positioning */
 #question1{
     display: none;
     position: relative;
 }
-
+/* A1 display and positioning */
 #answer1{
     display: none;
     position: relative;
 }
-
+/* House text styling to make it look like the question */
 #house {
     font-family: bungee, sans-serif;
     font-weight: 400;
@@ -141,7 +142,7 @@ h2 {
     text-decoration: none;
     color: black;
 }
-
+/* Styling for text */
 #text1 {
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -149,7 +150,7 @@ h2 {
     position: relative;
     display: none;
 }
-
+/* Styling for button */
 #keepgoing{
     background-color: #F2A3C5;
     color: white;
@@ -162,17 +163,17 @@ h2 {
     left: 90px;
     top: 100px;
 }
-
+/* Q2 display and positioning */
 #question2{
     display: none;
     position: relative;
 }
-
+/* A2 display and positioning */
 #answer2{
     display: none;
     position: relative;
 }
-
+/* Styling for text */
 #text2 {
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -180,7 +181,7 @@ h2 {
     position: relative;
     display: none;
 }
-
+/* Styling for button */
 #keepgoing2{
     background-color: #F2A3C5;
     color: white;
@@ -193,17 +194,17 @@ h2 {
     left: 90px;
     top: 100px;
 }
-
+/* Q3 display and positioning */
 #question3{
     display: none;
     position: relative;
 }
-
+/* A3 display and positioning */
 #answer3{
     display: none;
     position: relative;
 }
-
+/* Styling for text */
 #text3 {
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -211,7 +212,7 @@ h2 {
     position: relative;
     display: none;
 }
-
+/* Styling for button */
 #keepgoing3{
     background-color: #F2A3C5;
     color: white;
@@ -224,21 +225,22 @@ h2 {
     left: 90px;
     top: 100px;
 }
-
+/* Q4 display and positioning */
 #question4{
     display: none;
     position: relative;
 }
-
+/* Display and position for text */
 #gotit{
     display: none;
     position: relative;
 }
+/* Display and position for text */
 #answer4{
     display: none;
     position: relative;
 }
-
+/* Styling for text */
 #text4{
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -247,7 +249,7 @@ h2 {
     position: relative;
     display: none;
 }
-
+/* Styling for text */
 #losttext{
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -258,7 +260,7 @@ h2 {
     display: none;
     position: relative;
 }
-
+/* Styling for text */
 #wincount, #losscount {
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -268,6 +270,7 @@ h2 {
     display: none;
     line-height: 0%;
 }
+/* Styling for buttons */
 #playagain, #tryagain{
     background-color: #F2A3C5;
     color: white;
@@ -281,7 +284,7 @@ h2 {
     left: 130px;
     top: 120px;
 }
-
+/* Styling for text */
 #wincount, #losscount {
     font-family: bungee, sans-serif;
     font-weight: 800;
@@ -289,12 +292,12 @@ h2 {
     position: relative;
     display: none;
 }
-
+/* Positioning for text */
 #nopetext1 {
     display: none;
     position: relative;
 }
-
+/* Styling for form */
 #form, p {
     display: none;
     font-family: bungee, sans-serif;
@@ -302,7 +305,7 @@ h2 {
     font-style: normal;
     position: relative;
 }
-
+/* Styling for button */
 input{
     background-color: #F2A3C5;
     color: white;
@@ -310,8 +313,8 @@ input{
     font-family: bungee, sans-serif;
     font-weight: 300;
     font-style: normal;
-
 }
+/*Media queries for bigger screens*/
 @media only screen and (min-width: 992px){
  #timer, #nopetext1, #nopetext14{
     margin-left: 580px;

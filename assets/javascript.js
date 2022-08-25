@@ -67,8 +67,6 @@ var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
 var losttext = document.querySelector("#losttext")
 
-
-
 var secondsLeft = 60;
 var wins = 0;
 var losses = 0;
@@ -97,6 +95,7 @@ house.addEventListener("click",function(){
 });  
 
 nope1.addEventListener("click", function(){
+    secondsLeft -= 3;
     question1.style.display = "none";
     nope1.style.display = "none";
     nope12.style.display = "none";
@@ -116,6 +115,7 @@ nopetext1.addEventListener("click", function(){
 });
 
 nope12.addEventListener("click", function(){
+    secondsLeft -= 3;
     question1.style.display = "none";
     nope1.style.display = "none";
     nope12.style.display = "none";
@@ -135,6 +135,7 @@ nopetext12.addEventListener("click", function(){
 });
 
 nope13.addEventListener("click", function(){
+    secondsLeft -= 3;
     question1.style.display = "none";
     nope1.style.display = "none";
     nope12.style.display = "none";
@@ -154,6 +155,7 @@ nopetext13.addEventListener("click", function(){
 });
 
 nope14.addEventListener("click", function(){
+    secondsLeft -= 3;
     question1.style.display = "none";
     nope1.style.display = "none";
     nope12.style.display = "none";
@@ -183,6 +185,7 @@ keepgoing.addEventListener("click",function(){
 });
 
 nope2.addEventListener("click", function(){
+    secondsLeft -= 3;
     question2.style.display = "none";
     ok.style.display = "none";
     nope2.style.display = "none";
@@ -202,6 +205,7 @@ nopetext2.addEventListener("click", function(){
 });
 
 nope23.addEventListener("click", function(){
+    secondsLeft -= 3;
     question2.style.display = "none";
     ok.style.display = "none";
     nope2.style.display = "none";
@@ -222,6 +226,7 @@ nopetext23.addEventListener("click", function(){
 
 
 nope24.addEventListener("click", function(){
+    secondsLeft -= 3;
     question2.style.display = "none";
     ok.style.display = "none";
     nope2.style.display = "none";
@@ -263,6 +268,7 @@ keepgoing2.addEventListener("click", function(){
 });
 
 nope3.addEventListener("click", function(){
+    secondsLeft -= 3;
     question3.style.display = "none";
     spock.style.display = "none";
     nope3.style.display = "none";
@@ -282,6 +288,7 @@ nopetext3.addEventListener("click", function(){
 });
 
 nope32.addEventListener("click", function(){
+    secondsLeft -= 3;
     question3.style.display = "none";
     spock.style.display = "none";
     nope3.style.display = "none";
@@ -302,6 +309,7 @@ nopetext32.addEventListener("click", function(){
 
 
 nope34.addEventListener("click", function(){
+    secondsLeft -= 3;
     question3.style.display = "none";
     spock.style.display = "none";
     nope3.style.display = "none";
@@ -349,6 +357,7 @@ gotit.addEventListener("click", function (){
 })
 
 nope4.addEventListener("click", function(){
+    secondsLeft -= 3;
     question4.style.display = "none";
     thisanswer.style.display = "none";
     nope4.style.display = "none";
@@ -370,6 +379,7 @@ nopetext4.addEventListener("click", function(){
 });
 
 nope42.addEventListener("click", function(){
+    secondsLeft -= 3;
     question4.style.display = "none";
     thisanswer.style.display = "none";
     nope4.style.display = "none";
@@ -391,6 +401,7 @@ nopetext42.addEventListener("click", function(){
 });
 
 nope43.addEventListener("click", function(){
+    secondsLeft -= 3;
     question4.style.display = "none";
     thisanswer.style.display = "none";
     nope4.style.display = "none";
@@ -412,6 +423,7 @@ nopetext43.addEventListener("click", function(){
 });
 
 nope44.addEventListener("click", function(){
+    secondsLeft -= 3;
     question4.style.display = "none";
     thisanswer.style.display = "none";
     nope4.style.display = "none";
@@ -432,9 +444,8 @@ nopetext44.addEventListener("click", function(){
     nopetext44.style.display = "none";
 });
 
-
 thisanswer.addEventListener("click", function(){
-    wins ++
+    wins ++;
     wincount.textContent = ("WINS: " + wins);
     losscount.textContent = ("LOSSES: " + losses);
     wincount.style.display = "block";
@@ -464,6 +475,13 @@ tryagain.addEventListener("click", function(){
 no.addEventListener("click", function(){
     alert("Please play, it took a long time to do this")
 });
+
+function storedItems(){
+    localStorage.setItem('losses', losses);
+    localStorage.setItem('wins', wins);
+};
+
+storedItems();
 
 function setTime() {
   var timerInterval = setInterval(function() {
