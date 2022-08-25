@@ -61,8 +61,8 @@ var question4 = document.querySelector("#question4")
 var gotit = document.querySelector ("#gotit")
 var answer4 = document.querySelector(".answer4")
 var thisanswer = document.querySelector("#thisanswer")
-var wincount = document.querySelector("#wincount").value = storedWins;
-var losscount = document.querySelector("#losscount").value = storedLosses;
+var wincount = document.querySelector("#wincount")
+var losscount = document.querySelector("#losscount")
 var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
 var losttext = document.querySelector("#losttext")
@@ -463,13 +463,7 @@ tryagain.addEventListener("click", function(){
 
 no.addEventListener("click", function(){
     alert("Please play, it took a long time to do this")
-})
-
-localStorage.setItem("losses", losses);
-localStorage.setItem('wins', wins);
-
-var storedWins = localStorage.getItem('wins')
-var storedLosses = localStorage.getItem('losses')
+});
 
 function setTime() {
   var timerInterval = setInterval(function() {

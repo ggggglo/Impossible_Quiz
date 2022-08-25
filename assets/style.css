@@ -279,7 +279,7 @@ h2 {
     padding: 10px;
     position: relative;
     left: 130px;
-    top: 100px;
+    top: 120px;
 }
 
 #wincount, #losscount {
@@ -301,7 +301,6 @@ h2 {
     font-weight: 300;
     font-style: normal;
     position: relative;
-
 }
 
 input{
