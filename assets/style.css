@@ -124,16 +124,12 @@ h2 {
     left: 45px;
     top: 100px;
 }
-/* Q1 display and positioning */
-#question1{
+/* Display and positioning */
+#question1, #answer1, #question2, #answer2, #question3, #answer3, #question4, #gotit, #answer4, #nopetext1{
     display: none;
     position: relative;
 }
-/* A1 display and positioning */
-#answer1{
-    display: none;
-    position: relative;
-}
+
 /* House text styling to make it look like the question */
 #house {
     font-family: bungee, sans-serif;
@@ -163,16 +159,7 @@ h2 {
     left: 90px;
     top: 100px;
 }
-/* Q2 display and positioning */
-#question2{
-    display: none;
-    position: relative;
-}
-/* A2 display and positioning */
-#answer2{
-    display: none;
-    position: relative;
-}
+
 /* Styling for text */
 #text2 {
     font-family: bungee, sans-serif;
@@ -194,16 +181,7 @@ h2 {
     left: 90px;
     top: 100px;
 }
-/* Q3 display and positioning */
-#question3{
-    display: none;
-    position: relative;
-}
-/* A3 display and positioning */
-#answer3{
-    display: none;
-    position: relative;
-}
+
 /* Styling for text */
 #text3 {
     font-family: bungee, sans-serif;
@@ -225,21 +203,7 @@ h2 {
     left: 90px;
     top: 100px;
 }
-/* Q4 display and positioning */
-#question4{
-    display: none;
-    position: relative;
-}
-/* Display and position for text */
-#gotit{
-    display: none;
-    position: relative;
-}
-/* Display and position for text */
-#answer4{
-    display: none;
-    position: relative;
-}
+
 /* Styling for text */
 #text4{
     font-family: bungee, sans-serif;
@@ -292,11 +256,7 @@ h2 {
     position: relative;
     display: none;
 }
-/* Positioning for text */
-#nopetext1 {
-    display: none;
-    position: relative;
-}
+
 /* Styling for form */
 #form, p {
     display: none;
