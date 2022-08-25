@@ -93,13 +93,21 @@
 
 
         <div id = "text4"> CONGRATULATIONS! YOU WON!</div>
-        <div id = "wincount"></div>
-        <div id = "losscount"></div> 
+        <form id="form">
+            <p>Save your score: </p>
+            <label for="fname">Initials:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="EGG"><br>
+            <input type="submit" value="Submit">
+          </form>
+        
         <button id = "playagain">PLAY AGAIN!</button>
 
-        <div id = "losttext"> TERRIBLE NEWS! YOU LOST!</div>
-        <button id = "tryagain">TRY AGAIN!</button>
     </main>
+
+    <div id = "losttext">TERRIBLE NEWS! YOU LOST!</div>
+    <div id = "wincount"></div>
+    <div id = "losscount"></div>
+    <button id = "tryagain">TRY AGAIN!</button>
 
     <script src="./assets/javascript.js"></script>    
 </body>

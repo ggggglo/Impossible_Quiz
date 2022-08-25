@@ -7,6 +7,8 @@ var nope1 = document.querySelector("#nope1")
 var playagain = document.querySelector("#playagain")
 var tryagain = document.querySelector("#tryagain")
 var house = document.querySelector("#house")
+var form = document.querySelector("#form")
+var p = document.querySelector("p")
 
 var nope1 = document.querySelector("#nope1")
 var nopetext1 = document.querySelector("#nopetext1")
@@ -59,8 +61,8 @@ var question4 = document.querySelector("#question4")
 var gotit = document.querySelector ("#gotit")
 var answer4 = document.querySelector(".answer4")
 var thisanswer = document.querySelector("#thisanswer")
-var wincount = document.querySelector("#wincount")
-var losscount = document.querySelector("#losscount")
+var wincount = document.querySelector("#wincount").value = storedWins;
+var losscount = document.querySelector("#losscount").value = storedLosses;
 var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
 var losttext = document.querySelector("#losttext")
@@ -446,6 +448,8 @@ thisanswer.addEventListener("click", function(){
     nope44.style.display = "none";
     timeLeft.style.display = "none";
     playagain.style.display = "block";
+    form.style.display = "block";
+    p.style.display = "block";
     console.log(wins);
 });
 
@@ -453,8 +457,19 @@ playagain.addEventListener("click", function(){
     window.location.reload()
 });
 
-localStorage.setItem("losses", "losses");
-localStorage.setItem('wins', 'wins');
+tryagain.addEventListener("click", function(){
+    window.location.reload()
+});
+
+no.addEventListener("click", function(){
+    alert("Please play, it took a long time to do this")
+})
+
+localStorage.setItem("losses", losses);
+localStorage.setItem('wins', wins);
+
+var storedWins = localStorage.getItem('wins')
+var storedLosses = localStorage.getItem('losses')
 
 function setTime() {
   var timerInterval = setInterval(function() {
@@ -463,8 +478,18 @@ function setTime() {
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
+      losttext.style.display = "block";
+      timer.style.display = "none";
+      losses++;
+      console.log(losses);
+      wincount.textContent = ("WINS: " + wins);
+      losscount.textContent = ("LOSSES: " + losses);
+      wincount.style.display = "block";
+      losscount.style.display = "block";
+      mainEl.style.display = "none";
+      tryagain.style.display = "block";
     }
-  }, 1000);
+  },1000);
 }
 
 setTime(); 

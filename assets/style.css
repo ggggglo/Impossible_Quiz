@@ -239,13 +239,24 @@ h2 {
     position: relative;
 }
 
-#text4, #losttext {
+#text4{
     font-family: bungee, sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin-top: 150px;
+    margin-top: 80px;
     position: relative;
     display: none;
+}
+
+#losttext{
+    font-family: bungee, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: red;
+    margin-bottom: 50px;
+    display: none;
+    position: relative;
 }
 
 #wincount, #losscount {
@@ -255,6 +266,7 @@ h2 {
     margin-top: 50px;
     position: relative;
     display: none;
+    line-height: 0%;
 }
 #playagain, #tryagain{
     background-color: #F2A3C5;
@@ -281,4 +293,41 @@ h2 {
 #nopetext1 {
     display: none;
     position: relative;
+}
+
+#form, p {
+    display: none;
+    font-family: bungee, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+
+}
+
+input{
+    background-color: #F2A3C5;
+    color: white;
+    border-color: black;
+    font-family: bungee, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+@media only screen and (min-width: 992px){
+ #timer, #nopetext1, #nopetext14{
+    margin-left: 580px;
+ }
+ #text1, #text2, #text3, #text4{
+    font-size: 30px;
+ }
+ #nopetext12, #nopetext13, #keepgoing, #nopetext2, #nopetext23, #nopetext24, #keepgoing2, #keepgoing3, #nopetext14, #nopetext4, #nopetext42, #nopetext43, #nopetext44{
+    margin-top: 40px;
+ }
+#nopetext12, #nopetext13, #keepgoing, #nopetext2, #nopetext23, #nopetext24, #keepgoing2, #nopetext3, #nopetext32, #nopetext34, #keepgoing3, #nopetext4, #nopetext42, #nopetext43, #nopetext44{
+    margin-left:550px;
+}
+#playagain, #tryagain{
+    margin-left:510px;
+    padding:60px;
+}
 }
