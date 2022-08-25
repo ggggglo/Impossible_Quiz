@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font family link-->
     <link rel="stylesheet" href="https://use.typekit.net/moy0gyz.css">
     <link rel="stylesheet" type="text/css" href="./assets/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
@@ -23,76 +24,83 @@
         <button id = yes> YES!</button>
         <button id = no> NO!</button>
         <div id = "timer">60</div>
+        <!--Id House is the answer to this question-->
         <div id = "question1" class = "questions">Can you click on <a id= house>The House?</a></div>
                 <ul>
+                    <!--Answers to Q1-->
                     <li id = "nope1" class = "answer1">What House?</li>
                     <li id = "nope12" class = "answer1">The House</a></li>
                     <li id = "nope13" class = "answer1">🏠</a></li>
                     <li id = "nope14" class = "answer1">esuoH ehT</a></li>
             </ul>
-
+        <!--Buttons that show up when wrong answers of Q1 are clicked-->
         <button id = "nopetext1">NOPE!</button>
         <button id = "nopetext12">TRY AGAIN</button>
         <button id = "nopetext13">THIS NOT IT!</button>
         <button id = "nopetext14">YOU'RE REALLY NOT GETTING IT</button>
-            
+        <!--Message when Q1 answer is cicked-->  
         <div id = "text1">Didn't think you were smart!</div>
-
+        <!--Button to go to Q2-->
         <button id = "keepgoing">Keep going</button>
-
+        <!--Q2-->
         <div id = "question2" class = "questions">sdrawkcaB sihT rewsnA</div>
                 <ul>
+                    <!--Answers to Q2-->
                     <li id = "ok" class = "answer2">!kO</li>
                     <li id = "nope2" class = "answer2">🤔</li>
                     <li id = "nope23" class = "answer2">sdrawkcaB?</li>
                     <li id = "nope24" class = "answer2">Ok!</li>        
                 </ul>
-
+        <!--Buttons that show up when wrong answers of Q1 are clicked-->        
         <button id = "nopetext2">NOT IT!</button>
         <button id = "nopetext23">YOU'RE WASTING TIME!</button>
         <button id = "nopetext24">TRY AGAIN!</button>
-
+         <!--Message when Q1 answer is cicked-->  
         <div id = "text2">!boJ dooG</div>
-
+        <!--Button to go to Q3-->
         <button id = "keepgoing2">Keep going</button>
-
+        <!--Q3-->       
         <div id = "question3" class = "questions">What is ✌️ + ✌️? </div>
                 <ul> 
+                    <!--Answers to Q3-->
                     <li id = "nope3" class = "answer3">4!</li>
                     <li id = "nope32" class = "answer3">✌️✌️</li>
                     <li id = "spock" class = "answer3">🖖</li>
                     <li id = "nope34" class = "answer3">I don't know!</li>
                 </ul>
-
+        <!--Buttons that show up when wrong answers of Q3 are clicked-->     
         <button id = "nopetext3">NOT IT!</button>
         <button id = "nopetext32">YOU'RE WASTING TIME!</button>
         <button id = "nopetext34">TRY AGAIN!</button>
-
+        <!--Message when Q3 answer is cicked--> 
         <div id = "text3">You may live long and prosper!</div>
-
+        <!--Button to go to Q4-->
         <button id = "keepgoing3">Keep going</button>  
-
+        <!--Q4-->        
         <div id = "question4" class = "questions">This is the right answer </div>
-
+        <!--Message to click to display answers for Q4-->
         <div id = gotit class = "answer4"> Ok got it!</div>
 
         <ul>
+            <!--Answers to Q4-->
             <li id = nope4 class = "answer4">This This This This This This This This This This This This</li>
             <li id = nope42 class = "answer4">This This This This This This This This This This This This This</li>
             <li id = nope4 class = "answer4">This This This This This This This This This This This This This</li>
+            <!--ID thisanswers is the correct answer for Q4-->
             <li id = thisanswer class = "answer4">This This This This This This This This This This This This This</li>
             <li id = nope43 class = "answer4">This This This This This This This This This This This This</li>
             <li id = nope43 class = "answer4">This This This This This This This This This This This This</li>
             <li id = nope44 class = "answer4">This This This This This This This This This This This This</li>
         </ul>
-        
+        <!--Buttons that show up when wrong answers of Q4 are clicked-->  
         <button id = "nopetext4"> THIS WRONG</button>
         <button id = "nopetext42">IT'S NOT THAT HARD!</button>
         <button id = "nopetext43">ALMOST!</button>
         <button id = "nopetext44">WRONG THIS</button>
 
-
+        <!--Display message when user gets all correct answers before time runs out-->
         <div id = "text4"> CONGRATULATIONS! YOU WON!</div>
+        <!--Form to save your initials for high score-->
         <form id="form">
             <p>Save your score: </p>
             <label for="fname">Initials:</label><br>
@@ -101,11 +109,14 @@
           </form>
 
     </main>
-
+    <!--Display message when time runs out-->
     <div id = "losttext">TERRIBLE NEWS! YOU LOST!</div>
+    <!--Text for wins and losses-->
     <div id = "wincount"></div>
     <div id = "losscount"></div>
+    <!--Play again button, after you win-->
     <button id = "playagain">PLAY AGAIN!</button>
+    <!--Try again button, after you loose-->
     <button id = "tryagain">TRY AGAIN!</button>
 
     <script src="./assets/javascript.js"></script>    

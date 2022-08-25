@@ -1,15 +1,11 @@
+/*Variables targeting elements in the body*/
 var body = document.querySelector("#body")
-var timeLeft = document.querySelector("#timer")
-var mainEl = document.querySelector("main")
-var yes = document.querySelector("#yes")
-var no = document.querySelector("#no")
-var nope1 = document.querySelector("#nope1")
-var playagain = document.querySelector("#playagain")
-var tryagain = document.querySelector("#tryagain")
-var house = document.querySelector("#house")
-var form = document.querySelector("#form")
+var h1 = document.querySelector("h1")
+var h2 = document.querySelector("h2")
 var p = document.querySelector("p")
+var mainEl = document.querySelector("main")
 
+/*Texts for Q1 when wrong answer is clicked*/
 var nope1 = document.querySelector("#nope1")
 var nopetext1 = document.querySelector("#nopetext1")
 var nope12 = document.querySelector("#nope12")
@@ -19,7 +15,7 @@ var nopetext13 = document.querySelector("#nopetext13")
 var nope14 = document.querySelector("#nope14")
 var nopetext14 = document.querySelector("#nopetext14")
 
-
+/*Texts for Q2 when wrong answer is clicked*/
 var nope2 = document.querySelector("#nope2")
 var nopetext2 = document.querySelector("#nopetext2")
 var nope23 = document.querySelector("#nope23")
@@ -27,6 +23,7 @@ var nopetext23 = document.querySelector("#nopetext23")
 var nope24 = document.querySelector("#nope24")
 var nopetext24 = document.querySelector("#nopetext24")
 
+/*Texts for Q3 when wrong answer is clicked*/
 var nope3 = document.querySelector("#nope3")
 var nopetext3 = document.querySelector("#nopetext3")
 var nope32 = document.querySelector("#nope32")
@@ -34,6 +31,7 @@ var nopetext32 = document.querySelector("#nopetext32")
 var nope34 = document.querySelector("#nope34")
 var nopetext34 = document.querySelector("#nopetext34")
 
+/*Texts for Q4 when wrong answer is clicked*/
 var nope4 = document.querySelector("#nope4")
 var nopetext4 = document.querySelector("#nopetext4")
 var nope42 = document.querySelector("#nope42")
@@ -43,34 +41,56 @@ var nopetext43 = document.querySelector("#nopetext43")
 var nope44 = document.querySelector("#nope44")
 var nopetext44 = document.querySelector("#nopetext44")
 
+/*Variable for buttons*/
+var keepgoing = document.querySelector("#keepgoing")
+var keepgoing2 = document.querySelector("#keepgoing2")
+var keepgoing3 = document.querySelector("#keepgoing3")
+var yes = document.querySelector("#yes")
+var no = document.querySelector("#no")
+var playagain = document.querySelector("#playagain")
+var tryagain = document.querySelector("#tryagain")
+var form = document.querySelector("#form")
+
+/*Variables for Q1, A1 and first congratulatory text*/
 var question1 = document.querySelector("#question1")
 var answer1 = document.querySelector(".answer1")
 var text1 = document.querySelector("#text1")
-var keepgoing = document.querySelector("#keepgoing")
+var house = document.querySelector("#house")
+
+/*Variables for Q2, A2 and second congratulatory text*/
 var question2 = document.querySelector("#question2")
 var answer2 = document.querySelector(".answer2")
-var ok = document.querySelector("#ok")
 var text2 = document.querySelector("#text2")
-var keepgoing2 = document.querySelector("#keepgoing2")
+var ok = document.querySelector("#ok")
+
+/*Variables for Q3, A3 and third congratulatory text*/
 var question3 = document.querySelector("#question3")
 var answer3 = document.querySelector("#answer3")
 var spock = document.querySelector("#spock")
 var text3 = document.querySelector("#text3")
-var keepgoing3 = document.querySelector("#keepgoing3")
+
+/*Variables for Q4, A4 and fourth congratulatory text*/
 var question4 = document.querySelector("#question4")
-var gotit = document.querySelector ("#gotit")
 var answer4 = document.querySelector(".answer4")
+var gotit = document.querySelector ("#gotit")
 var thisanswer = document.querySelector("#thisanswer")
+
+/*Counter texts*/
+var timeLeft = document.querySelector("#timer")
 var wincount = document.querySelector("#wincount")
 var losscount = document.querySelector("#losscount")
-var h1 = document.querySelector("h1")
-var h2 = document.querySelector("h2")
 var losttext = document.querySelector("#losttext")
 
+/*Variables for number data types*/
 var secondsLeft = 60;
 var wins = 0;
 var losses = 0;
 
+/*All variables with "nope" will trigger display messages for wrong answers*/
+/*All variables with "nopetext" will trigger button to go back to question*/
+/*All variables with "keepgoing" will trigger button to go to next question*/
+
+/*Event that triggers the yes button*/
 yes.addEventListener("click", function(){
     question1.style.display = "block";
     nope1.style.display = "block";
@@ -84,6 +104,7 @@ yes.addEventListener("click", function(){
     h2.style.display = "none";
     });
 
+/*Event that triggers the house id, correct answer for Q1*/
 house.addEventListener("click",function(){
     question1.style.display = "none";
     nope1.style.display = "none";
@@ -246,7 +267,7 @@ nopetext24.addEventListener("click", function(){
     nopetext24.style.display = "none";
 });
 
-
+/*Event that triggers the ok id, correct answer for Q2*/
 ok.addEventListener("click", function(){
     text2.style.display = "block";
     keepgoing2.style.display = "block";
@@ -329,6 +350,7 @@ nopetext34.addEventListener("click", function(){
     nopetext34.style.display = "none";
 });
 
+/*Event that triggers the spock id, correct answer for Q3*/
 spock.addEventListener("click", function(){
     text3.style.display = "block";
     keepgoing3.style.display = "block";
@@ -347,6 +369,7 @@ keepgoing3.addEventListener("click", function(){
     gotit.style.display = "block";
 });
 
+/*Event that triggers the gotit id, to display answers for Q4*/
 gotit.addEventListener("click", function (){
     gotit.style.display = "none";
     thisanswer.style.display = "block";
@@ -444,6 +467,7 @@ nopetext44.addEventListener("click", function(){
     nopetext44.style.display = "none";
 });
 
+/*Event that triggers the thisanswer id, correct answer for Q4*/
 thisanswer.addEventListener("click", function(){
     wins ++;
     wincount.textContent = ("WINS: " + wins);
@@ -464,25 +488,31 @@ thisanswer.addEventListener("click", function(){
     console.log(wins);
 });
 
+/*Event that triggers the playagain button, reloads to main page*/
 playagain.addEventListener("click", function(){
     window.location.reload()
 });
 
+/*Event that triggers the tryagain button, reloads to main page*/
 tryagain.addEventListener("click", function(){
     window.location.reload()
 });
 
+/*Event that triggers the no button, displays message*/
 no.addEventListener("click", function(){
     alert("Please play, it took a long time to do this")
 });
 
+/*Function to store items in local storage*/
 function storedItems(){
     localStorage.setItem('losses', losses);
     localStorage.setItem('wins', wins);
 };
 
+/*Declare previous function*/
 storedItems();
 
+/*Function for timer*/
 function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
@@ -504,4 +534,5 @@ function setTime() {
   },1000);
 }
 
+/*Delcaring previous function*/
 setTime(); 
