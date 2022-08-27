@@ -519,6 +519,18 @@ function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
     timeLeft.textContent = secondsLeft;
+    answer1.addEventListener('click', function(){
+        secondsLeft-2;
+    });
+    answer2.addEventListener('click', function(){
+        secondsLeft-2;
+    });
+    answer3.addEventListener('click', function(){
+        secondsLeft-2;
+    });
+    answer4.addEventListener('click', function(){
+        secondsLeft-2;
+    });
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
@@ -534,6 +546,7 @@ function setTime() {
       tryagain.style.display = "block";
       localStorage.setItem('losses', losses);
       localStorage.getItem('losses');
+      
 
     }
   },1000);
