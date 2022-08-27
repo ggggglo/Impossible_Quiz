@@ -4,6 +4,7 @@ var h1 = document.querySelector("h1")
 var h2 = document.querySelector("h2")
 var p = document.querySelector("p")
 var mainEl = document.querySelector("main")
+var input = document.querySelector("main")
 
 /*Texts for Q1 when wrong answer is clicked*/
 var nope1 = document.querySelector("#nope1")
@@ -86,9 +87,11 @@ var secondsLeft = 60;
 var wins = 0;
 var losses = 0;
 
+
 /*All variables with "nope" will trigger display messages for wrong answers*/
 /*All variables with "nopetext" will trigger button to go back to question*/
 /*All variables with "keepgoing" will trigger button to go to next question*/
+/*All events that have the variable secondsLeft -=3, means that when that button is clicked, the timer will go down 3 seconds*/
 
 /*Event that triggers the yes button*/
 yes.addEventListener("click", function(){
@@ -467,6 +470,8 @@ nopetext44.addEventListener("click", function(){
     nopetext44.style.display = "none";
 });
 
+ var form = document.querySelector("#fname")
+
 /*Event that triggers the thisanswer id, correct answer for Q4*/
 thisanswer.addEventListener("click", function(){
     wins ++;
@@ -485,7 +490,12 @@ thisanswer.addEventListener("click", function(){
     playagain.style.display = "block";
     form.style.display = "block";
     p.style.display = "block";
+    localStorage.setItem('wins', wins);
+    localStorage.getItem('wins');
+    localStorage.setItem('highscore', form);
+    localStorage.getItem('highscore');
     console.log(wins);
+    console.log(form)
 });
 
 /*Event that triggers the playagain button, reloads to main page*/
@@ -503,14 +513,6 @@ no.addEventListener("click", function(){
     alert("Please play, it took a long time to do this")
 });
 
-/*Function to store items in local storage*/
-function storedItems(){
-    localStorage.setItem('losses', losses);
-    localStorage.setItem('wins', wins);
-};
-
-/*Declare previous function*/
-storedItems();
 
 /*Function for timer*/
 function setTime() {
@@ -530,9 +532,19 @@ function setTime() {
       losscount.style.display = "block";
       mainEl.style.display = "none";
       tryagain.style.display = "block";
+      localStorage.setItem('losses', losses);
+      localStorage.getItem('losses');
+
     }
   },1000);
 }
 
-/*Delcaring previous function*/
+var form = document.querySelector("#form")
+
+localStorage.setItem('form',form)
+localStorage.getItem('form')
+
+console.log(form);
+
+/*Declaring previous function*/
 setTime(); 

@@ -61,7 +61,7 @@ h2 {
     margin-top: 100px;
 }
 /* Styling for first 3 answers */
-.answer1, .answer2, .answer3 {
+.answer1, .answer2, .answer3, .answer1ok, .answer2ok, .answer3ok {
     list-style: none;
     font-family: bungee, sans-serif;
     font-weight: 500;
@@ -70,7 +70,7 @@ h2 {
     margin-right: 10px;
 }
 /* Styling for answer 4 */
-.answer4 {
+.answer4, .answer4ok {
     list-style: none;
     font-family: bungee, sans-serif;
     font-weight: 500;
