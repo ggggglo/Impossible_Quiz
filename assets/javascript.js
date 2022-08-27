@@ -519,34 +519,38 @@ function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
     timeLeft.textContent = secondsLeft;
+
+    if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+        losttext.style.display = "block";
+        timer.style.display = "none";
+        losses++;
+        console.log(losses);
+        wincount.textContent = ("WINS: " + wins);
+        losscount.textContent = ("LOSSES: " + losses);
+        wincount.style.display = "block";
+        losscount.style.display = "block";
+        mainEl.style.display = "none";
+        tryagain.style.display = "block";
+        localStorage.setItem('losses', losses);
+        localStorage.getItem('losses');
+        
     answer1.addEventListener('click', function(){
         secondsLeft-2;
     });
+
     answer2.addEventListener('click', function(){
         secondsLeft-2;
     });
+
     answer3.addEventListener('click', function(){
         secondsLeft-2;
     });
+
     answer4.addEventListener('click', function(){
         secondsLeft-2;
     });
 
-    if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      losttext.style.display = "block";
-      timer.style.display = "none";
-      losses++;
-      console.log(losses);
-      wincount.textContent = ("WINS: " + wins);
-      losscount.textContent = ("LOSSES: " + losses);
-      wincount.style.display = "block";
-      losscount.style.display = "block";
-      mainEl.style.display = "none";
-      tryagain.style.display = "block";
-      localStorage.setItem('losses', losses);
-      localStorage.getItem('losses');
-      
 
     }
   },1000);
